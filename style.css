@@ -1,0 +1,131 @@
+/*custom colors*/
+:root {
+    --main-red: #E68774;
+    --main-orange: #F3BC85;
+    --main-blue: #4A506A;
+    --main-white: #EFEAD9;
+}
+/* Base reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* box-sizing and font sizing */
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+
+    /* Set font size for easy rem calculations
+     * default document font size = 16px, 1rem = 16px, 100% = 16px
+     * (100% / 16px) * 10 = 62.5%, 1rem = 10px, 62.5% = 10px
+    */
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    background-color: #EFEAD9;
+    font-family: 'Montserrat Medium', sans-serif;
+}
+h1{
+
+}
+/*Nav bar stuff*/
+nav {
+ position:fixed;
+    width: 100%
+}
+nav ul{
+    background-color: var(--main-red);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+
+}
+nav li{
+    float:right;
+    width: 12%;
+    max-width: 300px;
+    min-width: 80px;
+}
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    height: 60px;
+
+}
+nav li a:hover {
+    background-color: var(--main-white);
+    color: black;
+}
+nav i {
+    font-size: 30px;
+    padding-bottom: 2px;
+}
+/*nav bar stuff end*/
+
+/* welcome section*/
+#welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--main-blue);
+    color: white;
+}
+/*nav end*/
+
+h1 {
+    font-family: 'Yanone Kaffeesatz', Serif;
+    font-size: 10em;
+    text-align: center;
+    color: var(--main-orange);
+}
+
+h2 {
+    font-size: x-large;
+    }
+
+p {
+    font-size: large;
+}
+/*&project start*/
+.project-section {
+    text-align: center;
+}
+.projects-section-header {
+    font-family: 'Yanone Kaffeesatz', Serif;
+    text-align: center;
+    font-size: 35px;
+    padding: 30px;
+    border-bottom: 2px solid black;
+    max-width: 500px;
+
+}
+#projects {
+    background-color: var(--main-white);
+    color: black;
+}
+.project-grid {  /*grid layout with auto resizing*/
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 40px;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+
+/*project end*/
+
+
