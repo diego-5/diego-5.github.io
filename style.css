@@ -30,8 +30,20 @@ html {
     background-color: #EFEAD9;
     font-family: 'Montserrat Medium', sans-serif;
 }
-h1{
+h1 {
+    font-family: 'Yanone Kaffeesatz', Serif;
+    letter-spacing: 12px;
+    font-size: 100px;
+    text-align: center;
+    color: var(--main-orange);
+}
 
+h2 {
+    font-size: x-large;
+}
+
+p {
+    font-size: large;
 }
 /*Nav bar stuff*/
 nav {
@@ -44,8 +56,6 @@ nav ul{
     margin: 0;
     padding: 0;
     overflow: hidden;
-
-
 }
 nav li{
     float:right;
@@ -59,7 +69,7 @@ nav li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    height: 60px;
+    height: 70px;
 
 }
 nav li a:hover {
@@ -83,45 +93,34 @@ nav i {
     background-color: var(--main-blue);
     color: white;
 }
-/*nav end*/
+/*welcome end*/
 
-h1 {
-    font-family: 'Yanone Kaffeesatz', Serif;
-    font-size: 10em;
-    text-align: center;
-    color: var(--main-orange);
-}
 
-h2 {
-    font-size: x-large;
-    }
-
-p {
-    font-size: large;
-}
 /*&project start*/
-.project-section {
-    text-align: center;
-}
-.projects-section-header {
-    font-family: 'Yanone Kaffeesatz', Serif;
-    text-align: center;
-    font-size: 35px;
-    padding: 30px;
-    border-bottom: 2px solid black;
-    max-width: 500px;
-
-}
 #projects {
     background-color: var(--main-white);
     color: black;
 }
+.project-section {
+    padding: 90px 200px 30px 200px;
+    text-align: center;
+}
+.projects-section-header {
+    font-family: 'Yanone Kaffeesatz', Serif;
+    letter-spacing: 4px;
+    font-size: 35px;
+    margin: 0 auto 6px auto;
+    padding-bottom: 15px;
+    border-bottom: 2px solid black;
+
+}
+
 .project-grid {  /*grid layout with auto resizing*/
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-gap: 40px;
     width: 100%;
-    max-width: 1280px;
+    max-width: 1300px;
     margin: 0 auto;
     margin-bottom: 60px;
 }
